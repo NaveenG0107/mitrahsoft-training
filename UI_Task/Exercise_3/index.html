@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assests/css/index.css">
+</head>
+<body> 
+    <div class="outer">
+        <div class="imgSection">
+            <img src="Assests/Images/logo.png" alt="logo">
+        </div>
+        <div class="innForm">
+            <div class="singleField">
+                <div>
+                    <label for="fname">First name*</label>
+                </div>
+                <input type="text" id="fname" required>
+            </div>
+            <div class="singleField2">
+                <div>
+                    <label for="lname">Last name*</label>
+                </div>
+                <input type="text" id="lname" required>
+            </div>
+            <div class="doubleField">
+                <div>
+                    <label for="email">Email address*</label>
+                </div>
+                <input type="email" id="email" required>
+            </div>
+            <div class="doubleField">
+                <div>
+                    <label for="phno">Phone contact*</label>
+                </div>
+                <input type="text" id="phno" required>
+            </div>
+            <div class="address">
+                <label for="addr">Current address*</label>
+                <div class="addressField">
+                    <div class="subAddress">
+                        <div>
+                            <label for="street">Street*</label>
+                        </div>
+                        <input type="text" id="street" required>
+                    </div>
+                    <div class="subAddress">
+                        <div>
+                            <label for="city">City/Suburb</label>
+                        </div>
+                        <input type="text" id="city">
+                    </div>
+                    <div class="subAddress">
+                        <div>
+                            <label for="state">State*</label>
+                        </div>
+                        <input type="text" id="state" required>
+                    </div>
+                    <div class="subAddress">
+                        <div>
+                            <label for="Zip">Zip/Post Code*</label>
+                        </div>
+                        <input type="text" id="zip" required>
+                    </div>
+                    <div class="country">
+                        <div>
+                            <label for="country">Country*</label>
+                        </div>
+                        <input type="text" id="country" required>
+                    </div>
+                </div>
+            </div>
+            <div class="doubleField">
+                <div>
+                    <label for="interest">Please list the property or properties of interest*</label>
+                </div>
+                <textarea></textarea>
+            </div>
+            <div class="doubleField">
+                <div>
+                    <label for="date">When would you like a viewing?*</label>
+                </div>
+                <div class="subfieldDob">
+                    <input type="text" id="date" placeholder="  DD    /    MM    /    YYYY   " required>
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+            </div>
+            <div class="doubleField">
+                <div>
+                    <label for="location">Preference of location?*</label>
+                </div>
+                <select>
+                    <option>Select...</option>
+                    <option>madurai</option>
+                    <option>chennai</option>
+                </select>
+            </div>
+            <div class="doubleField">
+                <div>
+                    <label for="property">What kind of property are you looking for?*</label>
+                </div>
+                <select>
+                    <option>Select...</option>
+                    <option>farming</option>
+                    <option>construction land</option>
+                </select>
+            </div>
+            <div class="doubleField">
+                <div>
+                    <label for="budget">What is your budget?*</label>
+                </div>
+                <select>
+                    <option>Select...</option>
+                    <option>lakh</option>
+                    <option>more</option>
+                </select>
+            </div>
+            <div class="doubleField">
+                <div>
+                    <label for="ranger">Additional comments or requests*</label>
+                </div>
+                <div class="rangeTop">
+                    <p>100</p>
+                </div>
+                <div class="range">
+                    <p>50000</p>
+                    <input type="range" min="0" max="100" value="100" class="rangeBar" required>
+                    <p>100</p>
+                </div>   
+            </div>
+            <div class="buttonField">
+                <button>Submit now</button>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

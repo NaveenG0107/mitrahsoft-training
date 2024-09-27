@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox</title>
+    <script src="Assests/js/index.js"></script>
+    <link rel="stylesheet" href="Assests/css/bootstrap.min.css">
+</head>
+<body class=" d-flex flex-column  justify-content-center  align-items-center min-vh-100 bg-light">
+    <div>
+        <h2>checkbox </h2>
+    </div>
+     <div class=" d-flex justify-content-center align-items-center  border border-dark bg-dark text-light w-25 mt-5 row gy-5 shadow-lg p-3 rounded" >
+            <div class="form-group text-center d-flex flex-column justify-content-center align-items-center " >
+                <input type="checkbox" class="form-check-input" name="check">
+                <input type="checkbox" class="form-check-input" name="check">
+                <input type="checkbox" class="form-check-input" name="check">
+                <input type="checkbox" class="form-check-input" name="check">
+                <input type="checkbox" class="form-check-input" name="check">
+            </div>
+            <div class="form-group text-center">
+                <button onclick="checkAll()" class="bg-warning">checkAll</button>
+                <button onclick="unCheckAll()" class="bg-warning">unCheckAll</button>
+                <button onclick="opp()" class="bg-warning">Check and Uncheck</button>
+            </div>
+            
+    </div>  
+</body>
+</html>

@@ -1,0 +1,209 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    width:100%;
+    margin-bottom:2em;
+}
+
+.outer{
+    display:grid;
+    grid-template-rows:25% 1fr;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+
+.imgSection{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+img{
+    width:15em;
+    height:10em;
+}
+
+.innForm{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:0.8em;
+    width:100%;
+}
+
+.singleField{
+    width:87%;
+    border:1px solid rgba(170, 170, 170, 0.5);
+    border-right-width:0px;
+    padding:1em;
+    border-bottom:none;
+}
+
+.singleField2{
+    width:100%;
+    border:1px solid rgba(170, 170, 170, 0.5);
+    padding:1em;
+    border-bottom:none;
+}
+
+.doubleField{
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end:3;
+    width:100%;
+    border:1px solid rgba(170, 170, 170, 0.5);
+    padding:1em;
+    row-gap:0.5em;
+    border-bottom:none;
+}
+
+input{
+    outline:none;
+    border:none;
+    border-bottom:1px solid grey;
+    width:100%;
+    opacity:0.4;
+}
+
+textarea{
+    width:100%;
+    height:7em;
+    background-color:lightgrey;
+    outline:none;
+    opacity:0.2;
+}
+
+.address{
+    border:1px solid rgba(170, 170, 170, 0.5);
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end:3;
+    row-gap:0.5em;
+    width:100%;
+    padding:1em;
+    border-bottom:none;
+
+}
+
+.addressField{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:1em;
+    row-gap:1.5em;
+    width:100%;
+}
+
+.country{
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end:3;
+    width:100%;
+}
+
+
+.subAddress{
+    width:100%;
+    column-gap:1.5em;
+    row-gap:2em;
+
+}
+
+.subfieldDob{
+    display:flex;
+    flex-direction:row; 
+    width:50%;   
+    row-gap:0.5em;
+}
+
+hr{
+    float:left;
+    width:11em;
+    outline:none;
+    border:none;
+    border-bottom:1px solid grey;
+}
+#date{
+    padding-top:1em;
+    padding-bottom:1em;
+}
+
+i{
+    padding-top:0.5em;
+}
+
+.range{
+    display:flex;
+    flex-direction:row;
+}
+
+.rangeTop{
+    text-align:end;
+    width:95%;
+    height:1em;
+}
+
+.rangeBar{
+    accent-color:#1e1a4ee0;
+    opacity:1.0;
+}
+
+.buttonField{
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end:3;
+    padding:1em;
+    margin-bottom:1em;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:1em;
+    border:none;
+    outline: none;
+    color:white;
+    background-color:#1e1a4e;
+    margin-left:0.1em;
+}
+
+button{
+    background:transparent;
+    outline:none;
+    border:none;
+    font-size:1em;
+    color:white;
+}
+
+select {
+    appearance: none;
+    background:white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  opacity='0.9' width='16px' height='16px' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.1018 8C5.02785 8 4.45387 9.2649 5.16108 10.0731L10.6829 16.3838C11.3801 17.1806 12.6197 17.1806 13.3169 16.3838L18.8388 10.0731C19.5459 9.2649 18.972 8 17.898 8H6.1018Z' fill='%23212121'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding: 0.25rem 2rem 0.25rem 0.75rem;
+    height:3em;
+    outline:none;
+    border:none;
+    opacity:0.2;
+  }
+  
+  option{
+    background-color:white;
+  }
+
+@media screen and (max-width: 600px) 
+{
+.outer{
+    display:grid;
+    grid-template-rows:20% 1fr;
+    width:100%;
+}
+.innform{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:100%;
+}
+
+}

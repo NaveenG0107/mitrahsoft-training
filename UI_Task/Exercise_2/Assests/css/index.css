@@ -1,0 +1,222 @@
+body{
+    display:flex;
+    flex-direction:column;
+    padding:1em 3em 1em 3em;
+    background-color: black;
+}
+.inner{
+    display:grid;
+    grid-template-columns:25% auto;
+    background-color:white;
+    width: 95%;
+    height:90%;
+
+}
+
+.imgSection{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-image:url('..//Images/Pic.jpg');
+    background-attachment:scroll;
+    background-position:center;
+    background-size:cover;
+    width:100%;
+    height:100%;
+    color:white;
+}
+
+img{
+    width:100%;
+    height:100%;
+}
+
+.innForm{
+    width:auto;
+    height:auto;
+    padding:5em;
+}
+
+.subFields{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    font-family:arial;
+    font-weight:bolder;
+    font-size:0.9em;
+    width:100%;
+    height:100%;
+    row-gap:3em;
+    column-gap:5em;
+
+}
+
+.subField{
+    line-height:3em;
+}
+
+span{
+    color:red;
+    font-size:1.5em;
+}
+
+a{
+    float:right;
+    color:black;
+    font-size:0.8em;
+    font-family:arial;
+    font-weight:lighter;
+    text-decoration-color: grey;
+    text-decoration-thickness:2px;
+
+}
+input{
+    width: 100%;
+    height:3em;
+    border:1px solid grey;
+    border-radius:0.5em;;
+}
+
+select{
+    width: 100%;
+    height:3em;
+    border-radius:0.5em;
+    font-family:arial;
+    padding-left:1em;
+
+}
+
+.payment{
+    display:grid;
+    grid-template-columns:20% 23% 1fr;
+    width:100%;
+    font-family:arial;
+    font-weight:bold;
+    
+}
+
+.radioField{
+    display:flex;
+    flex-direction:row;
+    font-family:arial;
+    font-weight:550;
+    opacity:0.8;
+}
+
+input[type="radio"]{
+    accent-color:green;
+    width:1.5em;
+}
+
+.donateField{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-column-start: 1;
+    grid-column-end:3;
+    row-gap:3em;
+    width:100%;
+}
+
+.button{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-start: 2;
+    align-items:center;
+    margin-left:4em;
+    margin-top:2em;
+    column-gap:2em;
+}
+
+.submitButton{
+    width: 90%;
+    height:3.5em;
+    background-color:green;
+    color:white;
+    border:none;
+    border-radius:0.5em;
+    font-family:arial;
+    font-weight:bold;
+}
+
+.resetButton{
+    width:90%;
+    height:3.5em;
+    background-color:white;
+    color:grey;
+    border-radius:0.5em;
+    border:1px solid grey;
+    font-family:arial;
+    font-weight:bold;
+}
+
+#payment{
+    font-size:0.8em;
+}
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 0.3em;
+    outline: none;
+    background:linear-gradient(to right,green 50%,white 50%);
+    border-radius:0.1em;
+}
+.sliderThumb{
+    position:relative;
+    cursor:pointer;
+    bottom:0.9em;
+    left:45%;
+    background-color:green;
+    text-align:center;
+    width:7em;
+    height:1.7em;
+    padding-top:0.3em;
+    color:white;
+    word-spacing:0.9em;
+    font-family: Arial;
+}
+
+.para{
+    position:relative;
+    bottom:2em;
+    left:28em;
+    font-size:1.3em;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+
+}
+
+@media screen and (max-width: 700px){
+    .inner{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .imgSection{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-image:url('..//Images/Pic.jpg');
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-position:center;
+        background-size:100% 100%;
+        width:100%;
+        height:40em;
+        color:white;
+    }
+
+    .subFields{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .payment{
+        display:flex;
+        flex-direction:column;
+    }
+    
+}
